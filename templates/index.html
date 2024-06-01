@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" lang="en" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Nirg Cyber Course Python Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="/static/style/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="/static/style/font-awesome-all.css" />
+  <link rel="stylesheet" type="text/css" href="/static/style/animate.compat.css" />
+  <link rel="stylesheet" type="text/css" href="/static/style/style.min.css" />
+</head>
+
+<body>
+  <main>
+
+    <header>
+      <img src="/static/images/tournament.png" class="logo align-text-top">
+    </header>
+
+    <div class="row score-board">
+
+      <div class="col-6 score user-score">
+        <div data-user-play></div>
+        <div class="badge user-label">
+          <i class="fa-regular fa-user fa-xl"></i>
+        </div>
+        <div data-score-user="0">--</div>
+      </div>
+
+      <div class="col-6 score computer-score">
+        <div data-computer-play></div>
+        <div class="badge computer-label">
+          <i class="fa-solid fa-computer fa-xl"></i>
+        </div>
+        <div data-score-computer="0">--</div>
+      </div>
+
+    </div>
+
+    <div class="row moves">
+
+      <div class="col-4 move" data-card="rocks">
+        <img src="/static/images/rocks.png">
+      </div>
+
+      <div class="col-4 move" data-card="paper">
+        <img src="/static/images/paper.png">
+      </div>
+
+      <div class="col-4 move" data-card="scissors">
+        <img src="/static/images/scissors.png">
+      </div>
+
+    </div>
+  </main>
+</body>
+<script src="/static/js/popper.min.js"></script>
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/bootstrap.bundle.min.js"></script>
+<script src="/static/js/socket.io.js"></script>
+<script src="/static/js/script.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-K54B8NXG4F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-K54B8NXG4F');
+</script>
+
+
+</html>
